@@ -24,6 +24,12 @@ GH handle:  andrew-scoppa
 
 [Tokenizer](https://platform.openai.com/tokenizer)
 
+[Tools](https://platform.openai.com/docs/assistants/tools)
+
+[Prompt Engineering](https://platform.openai.com/docs/guides/prompt-engineering)
+
+[Prompting Examples](https://platform.openai.com/docs/examples)
+
 ## Copilot Resources
 
 [Using GitHub Copilot](https://docs.github.com/en/copilot/using-github-copilot)
@@ -32,7 +38,7 @@ GH handle:  andrew-scoppa
 
 [Using GitHub Copilot Chat in your IDE](https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat-in-your-ide)
 
-[Tutorial: GitHub Copilot and VS Code](https://github.com/skills/copilot-codespaces-vscode)
+[Copilot Chat Cookbook](https://docs.github.com/en/copilot/copilot-chat-cookbook)
 
 
 
