@@ -22,4 +22,4 @@ git pull origin main
 git push origin main
 
 # Echo a message indicating that the synchronization is complete
-Write-Output "Synchronization with remote repository complete."
+echo "Synchronization with remote repository complete."
