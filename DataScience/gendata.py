@@ -66,12 +66,26 @@ Details:
 """
 
 def plotdata(df):
-    # Check if the DataFrame has the required columns
-    if not all(col in df.columns for col in ['x', 'y']):
-        raise ValueError("DataFrame must contain 'x' and 'y' columns.")
+    """
+    Plots a scatter plot of data points from a given DataFrame.
+    Parameters:
+    df (pandas.DataFrame): A DataFrame containing the data to be plotted. 
+                           It must include columns 'x' and 'y'.
+    Raises:
+    ValueError: If the DataFrame does not contain 'x' and 'y' columns.
+    The function creates a scatter plot with 'x' values on the x-axis and 
+    'y' values on the y-axis. The plot includes axis labels and a title.
+    Assumes the input DataFrame 'df' is sorted by the 'x' column for correct visualization.
+    """
+    # Define a constant for figure size
+    FIGURE_SIZE = (10, 6)
+    
+    # Validate DataFrame columns
+    if not {'x', 'y'}.issubset(df.columns):
+        raise ValueError("The DataFrame must contain 'x' and 'y' columns.")
     
     # Create a scatter plot
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=FIGURE_SIZE)
     plt.scatter(df['x'], df['y'], color='blue', s=10)
     
     # Set labels and title
@@ -80,4 +94,4 @@ def plotdata(df):
     plt.title('Scatter Plot of Data Points')
     
     # Show the plot
-    plt.show()
+    plt.show() 
