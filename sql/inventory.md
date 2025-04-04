@@ -1,7 +1,7 @@
 # Inventory Database Creation Instructions
 
 ## Purpose
-The T-SQL`Inventory` database is designed to manage suppliers, categories, and products while enforcing referential integrity. It includes features such as auto-incrementing primary keys, timestamps for record creation and updates, and relationships between tables.
+The T-SQL `Inventory` database is designed to manage suppliers, categories, and products while enforcing referential integrity. It includes features such as auto-incrementing primary keys, timestamps for record creation and updates, and relationships between tables.
 
 ## Instructions
 1. **Database Setup**:
@@ -18,6 +18,7 @@ The T-SQL`Inventory` database is designed to manage suppliers, categories, and p
 
 4. **Additional Features**:
    - Create a view named `product_list` to display product, category, and supplier details.
-   - Implement a stored procedure to retrieve the `product_list` view.
-   - Add a trigger to update the `products` table when a `categories` record is deleted.
-   - Define functions to calculate the total number of products in a category and those supplied by a supplier.
+   - Implement a stored procedure named `GetProductList` to retrieve the `product_list` view.
+   - Add a trigger `trg_UpdateProductsOnCategoryDelete` to update the `products` table when a `categories` record is deleted.
+   - Define a function `TotalProductsInCategory` to calculate the total number of products in a category.
+   - Define a function `TotalProductsBySupplier` to calculate the total number of products supplied by a supplier.
