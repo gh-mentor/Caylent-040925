@@ -17,6 +17,4 @@ git pull origin main
 
 # 4. push changes to remote repository on branch 'main'
 git push origin main
-
-# Write a message indicating that the synchronization is complete
-Write-Output "Synchronization with remote repository is complete."
+"
