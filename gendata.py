@@ -26,7 +26,7 @@ Examples:
 - gendata((-100, 100)) generates a data frame with 'x' values between -100 and 100.
 """
 
-def gendatapoints(x_range):
+def gen_data_points(x_range):
     # Check if x_range is a tuple of two integers
     if not isinstance(x_range, tuple) or len(x_range) != 2 or not all(isinstance(i, int) for i in x_range):
         raise ValueError("x_range must be a tuple of two integers.")
@@ -64,7 +64,7 @@ Error Handling:
 - Raise a ValueError if df is not a pandas data frame.
 """
 
-def plotdata(df):
+def plot_data(df):
     # Check if df is a pandas data frame
     if not isinstance(df, pd.DataFrame):
         raise ValueError("df must be a pandas data frame.")
