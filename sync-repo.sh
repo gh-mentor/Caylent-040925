@@ -6,15 +6,16 @@
 # 3. pull changes from remote repository
 # 4. push changes to remote repository on branch 'main'.
 
-# 1. stage all changes
-git add .
+# step 1: stage all changes
+git stage .
 
-# 2. commit changes with message 'Updated'
+# step 2: commit changes with message 'Updated'
 git commit -m "Updated"
 
-# 3. pull changes from remote repository
+# step 3: pull changes from remote repository
 git pull origin main
 
-# 4. push changes to remote repository on branch 'main'
+# step 4: push changes to remote repository on branch 'main'
 git push origin main
-"
+
+# echo a message indicating that the script has finished running
